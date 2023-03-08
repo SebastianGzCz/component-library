@@ -1,6 +1,6 @@
 const { writeFile } = require('fs');
 // const { tokens } = require('../tokens.ts');
-const tokens = require('../tokens.json');
+const file = require('../tokens.json');
 
 function transformTokens(parentKey, object) {
     let tokensTransformed = '';
@@ -19,7 +19,9 @@ function transformTokens(parentKey, object) {
 }
 
 function buildCustomProperties() {
+    const tokens = file['global'];
     const tokenNames = Object.keys(tokens);
+    console.log('tok', tokenNames);
 
     tokenNames.forEach((tokenName) => {
         const tokenValue = tokens[tokenName];

@@ -1,0 +1,12 @@
+name: My Workflow
+on:
+  merge:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run build custom properties
+        run: npm run build-custom-properties
