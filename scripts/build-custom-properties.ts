@@ -21,7 +21,6 @@ function transformTokens(parentKey, object) {
 function buildCustomProperties() {
     const tokens = file['global'];
     const tokenNames = Object.keys(tokens);
-    console.log('tok', tokenNames);
 
     tokenNames.forEach((tokenName) => {
         const tokenValue = tokens[tokenName];
