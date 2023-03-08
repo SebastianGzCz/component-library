@@ -1,5 +1,6 @@
 const { writeFile } = require('fs');
-const { tokens } = require('../tokens.ts');
+// const { tokens } = require('../tokens.ts');
+const tokens = require('../tokens.json');
 
 function transformTokens(parentKey, object) {
     let tokensTransformed = '';
