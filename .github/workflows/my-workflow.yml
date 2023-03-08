@@ -1,6 +1,6 @@
 name: My Workflow
 on:
-  merge:
+  push:
     branches:
       - main
 jobs:
