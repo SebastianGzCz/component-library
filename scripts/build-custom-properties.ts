@@ -42,7 +42,7 @@ function buildCustomProperties() {
 
             // Confirma los cambios en el repositorio
             exec(
-                ' git config --global user.email sebastian.gc@globant.com"',
+                'git config --global user.email sebastian.gc@globant.com',
                 (error, stdout, stderr) => {
                     if (error) {
                         console.log(`Error al confirmar los cambios: ${error}`);
@@ -53,7 +53,7 @@ function buildCustomProperties() {
             );
             // Confirma los cambios en el repositorio
             exec(
-                'git config --global user.name sebastian.gc"',
+                'git config --global user.name sebastianGzCz',
                 (error, stdout, stderr) => {
                     if (error) {
                         console.log(`Error al confirmar los cambios: ${error}`);
