@@ -16,4 +16,4 @@ jobs:
       - name: Build custom properties
         run: npm run build-custom-properties
       - name: List generated files
-        run: ls /home/runner/work/your-repo-name/your-repo-name/tokens/
+        run: ls /home/runner/work/component-library/component-library/tokens/
