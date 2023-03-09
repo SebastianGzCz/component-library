@@ -13,3 +13,5 @@ jobs:
         run: npm install
       - name: Build custom properties
         run: npm run build-custom-properties
+      - name: List generated files
+        run: ls /home/runner/work/your-repo-name/your-repo-name/tokens/

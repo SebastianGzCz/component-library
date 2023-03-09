@@ -25,8 +25,8 @@ function buildCustomProperties() {
     tokenNames.forEach((tokenName) => {
         const tokenValue = tokens[tokenName];
         const transformedTokens = transformTokens(null, tokenValue).trim();
-        const filename = `./tokens/${tokenName}.scss`;
-
+        
+        const filename = `/home/runner/work/component-library/component-library/tokens/${tokenName}.scss`;
         writeFile(filename, transformedTokens, 'utf8', (error) => {
             if (error) throw error;
             console.log(`The file ${filename} has been created!`);
