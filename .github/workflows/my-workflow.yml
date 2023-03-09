@@ -16,17 +16,4 @@ jobs:
       - name: Build custom properties
         run: npm run build-custom-properties
       - name: List generated files
-        run: ls /home/runner/work/component-library/component-library/tokens/
-      - name: Add new files
-        run: git add .
-      - name: config user email
-        run:  git config --global user.email sebastian.gc@globant.com
-      - name: Add user name
-        run: git config --global user.name sebastian.gc
-      - name: Add new files
-        run: git add .
-      - name: Commit
-        run: git commit -m "new tokens"
-      - name: Push
-        run: git push
-    
+        run: ls /home/runner/work/component-library/component-library/tokens/    
